@@ -11,7 +11,7 @@ premises = []
 class inference:
     def __init__(self, data):
         self.data = data
-        self.fact = dict()
+        self.fact = dict() # facts:sth {is} sth.
         self.rules = dict(dict())
         self.statements = dict()
         self.result = str()
@@ -47,6 +47,8 @@ class inference:
         '''
         res = ""
         change = True
+        self.fact = self.fact_extraction()
+
 
         while change:
             change = False
