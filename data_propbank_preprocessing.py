@@ -7,11 +7,6 @@ from allennlp.predictors import Predictor
 def get_predictor():
     return Predictor.from_path("/Users/alexzheng/Downloads/structured-prediction-srl-bert.2020.12.15.tar.gz")
 
-
-print("---------")
-print(os.getcwd())
-print("---------")
-
 raw_data_path = "/Users/alexzheng/Documents/textual_entailment/PredicateInfoExtract/preprocessed/openbookqa/openbookqa-test-processed-questions.jsonl"
 
 preprocessed_data_path = "/Users/alexzheng/Documents/textual_entailment/PredicateInfoExtract/preprocessed/openbookqa/srl-processed-premises.jsonl"
